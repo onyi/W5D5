@@ -1,6 +1,6 @@
-////////////////////////
+// //////////////////////
 //  Clock
-////////////////////////
+// //////////////////////
 
 // class Clock {
 //   constructor() {
@@ -46,39 +46,45 @@
 
 
 
-////////////////////////
+// //////////////////////
 //  addNumbers
-////////////////////////
+// //////////////////////
 
 
-const readline = require("readline");
-const reader = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-
-// reader.question("Enter a number: \n", function(res1) {
-//   addNumbers(res1, , completionCallback);
-//   // reader.close();
+// const readline = require("readline");
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
 // });
 
-function addNumbers(sum, numsLeft, completionCallback) {
-  console.log(`numsLeft: ${numsLeft}`);
-  if (numsLeft === 0) {
-    completionCallback(sum);
-    reader.close();
-  }
+// // reader.question("Enter a number: \n", function(res1) {
+// //   addNumbers(res1, , completionCallback);
+// //   // reader.close();
+// // });
+
+// function addNumbers(sum, numsLeft, completionCallback) {
+//   console.log(`numsLeft: ${numsLeft}`);
+//   if (numsLeft === 0) {
+//     completionCallback(sum);
+//     reader.close();
+//   }
   
-  if (numsLeft > 0) {
-    reader.question("Enter a number: \n", function(res2) {
-      let num = parseInt(res2);
-      sum += num;
-      console.log(`Current sum: ${sum}`);
-      addNumbers(sum, (numsLeft - 1), completionCallback);
-    });
-  }
-}
+//   if (numsLeft > 0) {
+//     reader.question("Enter a number: \n", function(res2) {
+//       let num = parseInt(res2);
+//       sum += num;
+//       console.log(`Current sum: ${sum}`);
+//       addNumbers(sum, (numsLeft - 1), completionCallback);
+//     });
+//   }
+// }
 
-addNumbers(0, 3, sum => console.log(`Total sum: ${sum}`));
+// addNumbers(0, 3, sum => console.log(`Total sum: ${sum}`));
 
-// console.log("\n\nlast line\n\n");
+// // console.log("\n\nlast line\n\n");
+
+
+
+
+
+
